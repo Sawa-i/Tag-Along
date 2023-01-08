@@ -1,0 +1,33 @@
+
+.planner input{
+    text-align: center;
+
+    padding:3px;
+    border-radius: 20px;
+}
+
+.planner select ,input{
+    font-family:  'Varela Round', sans-serif;
+    font-weight: bold;
+
+}
+
+select{
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+table[class="PlansTable"] tr,td,th{
+    padding: 3px;
+    padding-top: 5px;
+    padding-bottom:5px;
+}
+
+
+
+form table[class="joinFormTable"] tr,td,th{
+    padding: 10px;
+}
+

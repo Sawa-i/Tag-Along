@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    z-index: 1;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: Black;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    height: 45px;
+    font-family: 'Oxanium', cursive;
+}
+
+#myBtn:hover {
+    opacity: 0.9;
+    font-size: medium;
+    color: white
+}
+
+.container {
+    font-family: 'Oxanium', cursive;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: none;
+}
+
+.container h1 {
+    width: 100%;
+    color: Black;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container .subcontainer {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.container .subcontainer .column {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+
+.container .subcontainer .inputbox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+
+.container .subcontainer .inputbox input, .container .subcontainer .inputbox.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    font-size: 18px;
+    padding: 0 10px;
+    color: white;
+    z-index: 1;
+}
+
+.container .subcontainer .inputbox .inputtext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    padding: 0 10px;
+    transition: 0.5s;
+    display: block;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.container .subcontainer .inputbox input:focus+.inputtext, .container .subcontainer .inputbox input:valid+.inputtext {
+    top: -35px;
+    left: -10px;
+}
+
+.container .subcontainer .inputbox .inputline {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: Black;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.container .subcontainer .inputbox input:focus~.inputline, .container .subcontainer .inputbox input:valid~.inputline {
+    height: 100%;
+}
+
+.container .subcontainer .inputbox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.container .subcontainer .inputbox.textarea textarea {
+    resize: none;
+    height: 100%;
+}
+
+.container .subcontainer .inputbox textarea:focus~.inputline, .container .subcontainer .inputbox textarea:valid~.inputline {
+    height: 100%;
+}
+
+.container .subcontainer .inputbox textarea:focus+.inputtext, .container .subcontainer .inputbox textarea:valid+.inputtext {
+    top: -35px;
+    left: -10px;
+}
+
+#send {
+    border: none;
+    background: Black;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 35px;
+    color: white;
+    border-radius: 2px;
+    font-size: 18px;
+    width: 110px;
+    height: 50px;
+    font-family: 'Oxanium', cursive;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+table {
+    width: 90%;
+    border:4px solid Black
+}
+
+td {
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+    font-family: 'Oxanium', cursive;
+    color: white;
+    background-color: rgb(32, 32, 32);
+
+}
+
+th {
+    text-align: center;
+    padding: 8px;
+    font-family: 'Oxanium', cursive;
+    background-color: Black;
+    color: white;
+    font-size: 25px;
+}
+
+#content>h1, #checkout-order-form h2 {
+    font-size: 45px;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Oxanium', cursive;
+    color: Black;
+}
+
+.button1{
+    border:none;
+    background-color: Black;
+    padding: 10px;
+    font-size:18px;
+    position: relative;
+    width:100px;
+    margin-top: 10px;
+    height:50px;
+    color:white;
+    font-family: 'Oxanium', cursive;
+    outline: none;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login{
+    text-align: right;
+    position: relative;
+    float: right;
+    background: linear-gradient(rgba(128, 128, 128, 0.418), rgba(0, 0, 0, 0.301), rgba(128, 128, 128, 0.432));
+    width: 220px;
+    color: black;
+    font-family: 'Oxanium', cursive;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: medium;
+    top:0px
+}
+
+.login1{
+    text-align: center;
+    position: relative;
+    background-color: Black;
+    width: 190px;
+    height:70px;
+    color: black;
+    font-family: 'Oxanium', cursive;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: medium;
+    top:0px  
+}
+
+.maincontainer {
+    width:100%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: Black;
+    list-style: none;
+    width:100%;
+    text-align:center
+}
+
+.nav .li {
+    position: relative;
+    display: block;
+    font-family: 'Oxanium', cursive;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.nav .li>a {
+    position: relative;
+    color: rgb(194, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav .li>a:hover {
+    text-decoration: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.493),rgba(54, 0, 0, 0.877),rgba(0, 0, 0, 0.404));
+    color: white;
+}
+
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity .15s linear
+}
+
+.fade.in {
+    opacity: 1
+}
+
+.message {
+    color: rgba(54, 0, 0, 0.877);
+    top:5px;
+    width:40%; 
+    height: 40px;
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}

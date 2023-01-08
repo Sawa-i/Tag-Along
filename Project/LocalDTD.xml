@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE AccountHolder[
+<!ELEMENT user ((cmsID), (name), (age), (department), (rating), (year), (password))>
+<!ELEMENT cmsID (CDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (CDATA)>
+<!ELEMENT department (CDATA)>
+<!ELEMENT year (CDATA)>
+<!ELEMENT rating (CDATA)>
+<!ATTLIST rating star ("1"|"2"|"3"|"4"|"5") #IMPLIED>
+<!ELEMENT password (#PCDATA)>
+]>
+
+<Accounts>
+<user>
+    <cmsID>242554</cmsID>
+    <password>kd_dk1221</password>
+    <name>Mohammad Awais</name>
+    <age>20</age>
+    <department>SEECS</department>
+    <year>2</year>
+    <rating>4</rating>
+<user>
+</Account>

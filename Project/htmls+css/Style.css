@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.col-1{ width: 8.33%;}
+.col-2{ width: 16.66%;}
+.col-3{ width: 25%;}
+.col-4{ width: 33.33%;}
+.col-5{ width: 41.66%;}
+.col-6{ width: 50%;}
+.col-7{ width: 58.33%;}
+.col-8{ width: 66.66%;}
+.col-9{ width: 75%;}
+.col-10{ width: 83.33%;}
+.col-11{ width: 91.66%;}
+.col-12{ width: 100%;}
+
+
+*{
+    box-sizing: border-box;
+}
+
+.w3-display-bottom{position:relative;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.w3-button{border:none; border-radius: 60px ; display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-black{color:rgb(255, 0, 0)!important;background:radial-gradient(black,rgb(39, 39, 39))!important}
+
+.sForum{
+    background: radial-gradient(rgb(36, 11, 0), rgba(8, 0, 114, 0.671), rgba(0, 0, 255, 0));
+    position: fixed;
+    left:5%;
+    padding:3px;
+    border-radius: 60px;
+    
+}
+
+.header{
+    width:100%;
+    Background-image: linear-gradient(Black, rgb(31, 31, 31), black);
+}
+
+ul{
+    float:right;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+li{
+    display: inline-block;
+    text-align: center;
+    padding:3px 10px;
+    text-decoration: none;
+    font-family: Pathway Gothic One ;
+    font-size: 25px;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(255, 174, 0);
+}
+
+li a:hover{
+    text-shadow:-15px 19px 2px red;
+}
+
+.footer{
+    width:100%;
+    background: rgba(0, 0, 0, 0.442);
+    position: fixed;
+    bottom:0px;
+}
+
+.footer a:hover{
+    color:red;
+}
+
+.sForum h1{
+    font-family: Bahnschrift SemiCondensed;
+}
+
+.sForumData {
+    font-family: Bahnschrift SemiCondensed;
+    font-size: 22px;
+}
+
+.sForumData a{
+    text-decoration: none;
+    
+}
+
+.sForumData a:hover{
+    text-shadow: 0px 20px 2px red;
+}
+
+.clear{
+    clear:both;
+}
+
+
+/* Overview Slides Homepage Related */
+
+.oSlides {display:none; width:100%; border-radius: 100px; height:75vh;}
+.overview { margin:auto; width:55%; height: 20vh;}
+
+/*About us*/
+
+
+
+/*Animations */
+.animate-right{position:relative;animation:animateright 1s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.animate-left{position:relative;animation:animateleft 1s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animate-top{position:relative;animation:animatetop 1s}@keyframes animatetop{from{top:-50px;opacity:0} to{top:0;opacity:1}}
+.animate-opacity{animation:opac 1.5s;}@keyframes opac{from{opacity:0} to{opacity:1}}
+.w3-animate-bottom{position:relative;animation:animatebottom 1s}@keyframes animatebottom{from{bottom:-50px;opacity:0} to{bottom:0;opacity:1}}
+
+/* Media Queries Below */
+
+
+@media only screen and (max-width: 1150px){ /* Tablets*/
+    .col-m-1{ width: 8.33%;}
+    .col-m-2{ width: 16.66%;}
+    .col-m-3{ width: 25%;}
+    .col-m-4{ width: 33.33%;}
+    .col-m-5{ width: 41.66%;}
+    .col-m-6{ width: 50%;}
+    .col-m-7{ width: 58.33%;}
+    .col-m-8{ width: 66.66%;}
+    .col-m-9{ width: 75%;}
+    .col-m-10{ width: 83.33%;}
+    .col-m-11{ width: 91.66%;}
+    .col-m-12{ width: 100%;}
+    
+    .sForum{
+        left:8%;
+    }
+    
+    li{
+        font-size: 18px;
+    }
+
+    .oSlides{
+        height: 500px;
+    }
+    
+    }
+    
+    @media only screen and (max-width: 750px){ /* Mobile */
+        .col-n-1{ width: 8.33%;}
+        .col-n-2{ width: 16.66%;}
+        .col-n-3{ width: 25%;}
+        .col-n-4{ width: 33.33%;}
+        .col-n-5{ width: 41.66%;}
+        .col-n-6{ width: 50%;}
+        .col-n-7{ width: 58.33%;}
+        .col-n-8{ width: 66.66%;}
+        .col-n-9{ width: 75%;}
+        .col-n-10{ width: 83.33%;}
+        .col-n-11{ width: 91.66%;}
+        .col-n-12{ width: 100%;}
+        
+    .sForum{
+        border-radius: 70px;
+        left:3%;
+    }
+
+    li{
+        display: inline-block;
+        text-align: center;
+        padding:3px 10px;
+        text-decoration: none;
+        font-family: Pathway Gothic One ;
+        font-size: 15px;
+    }
+
+    .oSlides{
+        height: 300px;
+    }
+
+    }
+    
